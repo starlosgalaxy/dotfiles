@@ -1,4 +1,9 @@
+# ~./dotfiles/.stow-local-ignore: files to be Ignored by gnu "stow"
+#
 # Comments and blank lines are allowed. 
+#
+# See "info stow" section "4 Ignore Lists" for more information
+
 
 # Default Config 
 RCS
@@ -22,6 +27,3 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-
-# My config items
-^README.*
