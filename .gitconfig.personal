@@ -2,7 +2,9 @@
 [user]
 email = carlosgsalazarf@gmail.com
 name = Carlos Salazar
+
 [github]
 user = "starlosgalaxy" #should be inisde double quote.
+
 [core]
 sshCommand = "ssh -i ~/.ssh/starlosgalaxy" #should be inisde double quote.
