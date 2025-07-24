@@ -12,7 +12,7 @@ GNU Stow is a symlink farm manager that helps you maintain dotfiles by creating 
 
 ## Structure
 
-```
+``` text
 dotfiles/
 ├── .zshrc
 ├── .gitconfig
@@ -24,12 +24,14 @@ dotfiles/
 ## Installation
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/.dotfiles
    cd ~/.dotfiles
    ```
 
 2. Stow all configurations:
+
    ```bash
    stow .    # This will stow everything from the current directory
    ```
@@ -37,6 +39,7 @@ dotfiles/
 ## Removing Symlinks
 
 To remove all symlinks:
+
 ```bash
 stow -D .    # Remove all symlinks
 ```
@@ -47,6 +50,16 @@ stow -D .    # Remove all symlinks
 2. Test new configurations in a clean environment before committing
 3. Keep sensitive information in separate, non-tracked files
 4. Document any special setup requirements for specific configurations
+
+## TODO
+
+- [ ] Try Porting over to DXG Directory Stucture
+- [ ] Split Aliases out
+- [ ] SPlit Exports out
+- [ ] Migrate Away from OMZ
+  - [ ] Pick a plugin manager or home roll one
+- [ ] Add Brew Configurations
+- [ ] More command Propmt Integrations
 
 ## License
 
