@@ -20,7 +20,6 @@ dotfiles/
 └── ... (other configuration files)
 ```
 
-
 ## Installation
 
 1. Clone this repository:
