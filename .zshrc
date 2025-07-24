@@ -163,8 +163,6 @@ zstyle ':omz:plugins:nvm' lazy yes
 # # switch group using `<` and `>`
 # zstyle ':fzf-tab:*' switch-group '<' '>'
 
-export OPENAI_API_KEY="{OPEN_API_KEY_HERE}"
-
 # load bash profile
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
