@@ -59,6 +59,7 @@ stow -D .    # Remove all symlinks
   - [ ] Pick a plugin manager or home roll one
 - [ ] Add Brew Configurations
 - [ ] More command Propmt Integrations
+- [ ] remove conflicting / dupliated auth token saving
 
 ## License
 
