@@ -1,0 +1,6 @@
+#inside ~/.ssh/config
+Host *
+  IgnoreUnknown AddKeysToAgent,UseKeychain
+  AddKeysToAgent yes
+  UseKeychain yes
+#   IdentityFile ~/.ssh/<personal_github_username> # Default key (You can also use company key)

@@ -1,0 +1,22 @@
+#inside ~/.gitconfig
+[includeIf "gitdir:/Users/carlos.salazar/Development/Personal/"] # include for all .git projects under ~/Development/Personal/
+path = ~/.gitconfig.personal
+
+[includeIf "gitdir:/Users/carlos.salazar/Development/Slalom/"] # include for all .git projects under ~/Development/Slalom/
+path = ~/.gitconfig.slalom
+
+[includeIf "gitdir:/Users/carlos.salazar/Development/Fastgrid/"] # include for all .git projects under ~/Development/Fastgrid/
+path = ~/.gitconfig.fastgrid
+
+[core]
+excludesfile = ~/.gitignore # Ignore .gitconfig files valid everywhere
+
+[credential]
+helper = osxkeychain
+
+[credential "https://dev.azure.com"]
+useHttpPath = true
+
+[user]
+name = Carlos Salazar
+email = carlos.salazar@slalom.com

@@ -1,0 +1,8 @@
+#inside ~/.gitconfig.fastgrid
+[user]
+email = carlos.salazar@slalom.com
+name = Carlos Salazar
+[github]
+user = "slalom-carlos" #should be inside double quote.
+[core]
+sshCommand = "ssh -i ~/.ssh/carlos.salazar@fastgrid" #should be inside double quote.
