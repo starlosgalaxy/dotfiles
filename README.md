@@ -9,6 +9,8 @@ GNU Stow is a symlink farm manager that helps you maintain dotfiles by creating 
 ## Prerequisites
 
 - GNU Stow (`brew install stow` on macOS or `apt-get install stow` on Ubuntu/Debian)
+- Zap package manager for zsh plugins 
+
 
 ## Structure
 

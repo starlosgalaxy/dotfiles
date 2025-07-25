@@ -27,3 +27,6 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+
+# backup files
+.+\.bak$
