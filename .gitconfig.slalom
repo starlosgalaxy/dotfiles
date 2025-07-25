@@ -1,10 +1,10 @@
 #inside ~/.gitconfig.slalom
 [user]
-email = carlos.salazar@slalom.com
-name = Carlos Salazar
+    email = carlos.salazar@slalom.com
+    name = Carlos Salazar
 
 [github]
-user = "Carlos.Salazar@slalom.com" #should be inside double quote.
+    user = "Carlos.Salazar@slalom.com" #should be inside double quote.
 
 [core]
-sshCommand = "ssh -i ~/.ssh/carlos.salazar@slalom" #should be inside double quote.
+    sshCommand = "ssh -i ~/.ssh/carlos.salazar@slalom" #should be inside double quote.
