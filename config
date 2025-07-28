@@ -3,4 +3,7 @@ Host *
   IgnoreUnknown AddKeysToAgent,UseKeychain
   AddKeysToAgent yes
   UseKeychain yes
+  IdentityFile ~/.ssh/starlosgalaxy
+  IdentityFile ~/.ssh/carlos.salazar@fastgrid
+  IdentityFile ~/.ssh/carlos.salazar@slalom
 #   IdentityFile ~/.ssh/<personal_github_username> # Default key (You can also use company key)
