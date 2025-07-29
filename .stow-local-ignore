@@ -30,3 +30,9 @@ _darcs
 
 # backup files
 .+\.bak$
+
+# setup files
+.*\.setup\..*
+
+# other files
+mac.setup.sh
