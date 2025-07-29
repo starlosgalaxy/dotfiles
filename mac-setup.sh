@@ -31,3 +31,5 @@ https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
 
 ## alternatively, you can also use the pre patched font from the nerd-fonts repo or wherever you want to get it from
 
+# install fzf
+brew install fzf

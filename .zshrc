@@ -64,11 +64,6 @@ export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
 export PATH="/opt/homebrew/opt/arm-none-eabi-gcc@8/bin:$PATH"
 export DOCKER_CONTEXT=colima
 
-# # Colors
-# export CLICOLOR=1
-# export LSCOLORS=GxFxCxDxBxegedabagaced  # Light blue for directories
-# export LS_COLORS="di=1;94:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
-
 # Aliases
 
 ### Added by Zinit's installer
@@ -100,3 +95,12 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+#completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# Aliases
+alias ls='ls --color'
+
+# Shell integrations
+eval "$(fzf --zsh)"
