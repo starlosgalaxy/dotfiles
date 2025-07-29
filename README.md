@@ -57,10 +57,11 @@ stow -D .    # Remove all symlinks
 - [ ] Try Porting over to DXG Directory Stucture
 - [ ] Split Aliases out
 - [ ] SPlit Exports out
-- [ ] Migrate Away from OMZ
-  - [ ] Pick a plugin manager or home roll one
+- [x] Migrate Away from OMZ
+  - [x] Pick a plugin manager or home roll one
+    - [x] Zinit
 - [ ] Add Brew Configurations
-- [ ] More command Propmt Integrations
+- [x] More command Propmt Integrations
 - [ ] remove conflicting / dupliated auth token saving
 
 ## License
