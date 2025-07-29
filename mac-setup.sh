@@ -22,3 +22,12 @@ brew install stow
 
 # install zinit
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+# get you a nerd font (patch your own)
+brew install fontforge
+
+# Download the zip util
+https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
+
+## alternatively, you can also use the pre patched font from the nerd-fonts repo or wherever you want to get it from
+
