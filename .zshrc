@@ -32,18 +32,23 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # My Plugins
-zinit ice depth=1; zinit light zsh-users/zsh-syntax-highlighting
-zinit ice depth=1; zinit light zsh-users/zsh-autosuggestions
-zinit ice depth=1; zinit light zsh-users/zsh-completions
-# zinit ice depth=1; zinit light marlonrichert/zsh-autocomplete
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light Aloxaf/fzf-tab
 
-# my zstyles
-zstyle ':completion:*' list-prompt   '' # stop asking for confirmation
-zstyle ':completion:*' select-prompt '' # stop asking for confirmation
+# Add snippits
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::docker
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::command-not-found
 
 # Load and initialise completion system
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
 
 # consider using emacs keybindings
 
@@ -64,7 +69,6 @@ export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
 export PATH="/opt/homebrew/opt/arm-none-eabi-gcc@8/bin:$PATH"
 export DOCKER_CONTEXT=colima
 
-# Aliases
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -98,9 +102,13 @@ setopt hist_find_no_dups
 
 #completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
 
 # Shell integrations
 eval "$(fzf --zsh)"
+
