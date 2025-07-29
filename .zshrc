@@ -31,6 +31,12 @@ source "${ZINIT_HOME}/zinit.zsh"
 # Font
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+# My Plugins
+zinit ice depth=1; zinit light zsh-users/zsh-syntax-highlighting
+zinit ice depth=1; zinit light zsh-users/zsh-autosuggestions
+zinit ice depth=1; zinit light zsh-users/zsh-completions
+# zinit ice depth=1; zinit light marlonrichert/zsh-autocomplete
+
 # my zstyles
 zstyle ':completion:*' list-prompt   '' # stop asking for confirmation
 zstyle ':completion:*' select-prompt '' # stop asking for confirmation
@@ -39,22 +45,14 @@ zstyle ':completion:*' select-prompt '' # stop asking for confirmation
 autoload -Uz compinit
 compinit
 
-
-
-
-# ssh-agent things
-
-
-# lazy nvm
+# consider using emacs keybindings
 
 # load bash profile
-
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 
 # load brew may not need
-
 if [ -f /opt/homebrew/bin/brew ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
@@ -89,3 +87,16 @@ autoload -Uz _zinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Enable History
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
