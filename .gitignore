@@ -1,0 +1,2 @@
+# ignore files that are postpended with .local under any directory
+**/*.local
