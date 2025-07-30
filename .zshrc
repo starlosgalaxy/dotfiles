@@ -77,4 +77,3 @@ source ~/zsh/.config/aliases.zsh
 
 # Shell integrations
 eval "$(fzf --zsh)"
-
