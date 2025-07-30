@@ -9,10 +9,9 @@ GNU Stow is a symlink farm manager that helps you maintain dotfiles by creating 
 ## Prerequisites
 
 - GNU Stow (`brew install stow` on macOS or `apt-get install stow` on Ubuntu/Debian)
-- Zap package manager for zsh plugins 
+- Zap package manager for zsh plugins
 
-
-## Structure
+## Structure (main OS is currently Darwin/MacOS)
 
 ``` text
 dotfiles/
@@ -51,17 +50,29 @@ stow -D .    # Remove all symlinks
 2. Test new configurations in a clean environment before committing
 3. Keep sensitive information in separate, non-tracked files
 4. Document any special setup requirements for specific configurations
+5. use `.local.**` for files you may want to symlink but don't want to commit up
 
 ## TODO
 
 - [ ] Try Porting over to DXG Directory Stucture
-- [ ] Split Aliases out
-- [ ] SPlit Exports out
-- [ ] Migrate Away from OMZ
-  - [ ] Pick a plugin manager or home roll one
 - [ ] Add Brew Configurations
-- [ ] More command Propmt Integrations
+  - [ ] need to split them between systems as well
 - [ ] remove conflicting / dupliated auth token saving
+- [ ] move .zshrc configs into a mac-profile.sh
+  - [ ] leave .zshrc empty to easily see random installs on system
+- [ ] move font files into here ?
+- [ ] revisit setup scrips for macOS
+
+## Done
+
+- [x] Zinit
+- [x] Split Aliases out
+- [x] SPlit Exports out
+- [x] Migrate Away from OMZ
+- [x] More command Prompt Integrations
+  - [x] Fzf, Fzf-tab
+  - [x] Pick a plugin manager or home roll one
+- [x] gitignore'ed local file integration
 
 ## License
 

@@ -44,15 +44,10 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-
 # consider using emacs keybindings
 
 # Exports
-
-export PATH="/opt/homebrew/opt/avr-gcc@8/bin:$PATH"
-export PATH="/opt/homebrew/opt/arm-none-eabi-binutils/bin:$PATH"
-export PATH="/opt/homebrew/opt/arm-none-eabi-gcc@8/bin:$PATH"
-export DOCKER_CONTEXT=colima
+source ~/zsh/.config/exports.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -69,16 +64,16 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt globdots
 
 #completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -AG --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+source ~/zsh/.config/aliases.zsh
 
 # Shell integrations
 eval "$(fzf --zsh)"
-

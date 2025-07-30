@@ -1,6 +1,5 @@
 [user]
     name = Carlos Salazar
-    email = carlos.salazar@slalom.com
 [credential]
     helper = osxkeychain
 

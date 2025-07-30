@@ -1,0 +1,2 @@
+# ignore files that have .local. in their name (e.g. something.local.js)
+**/*.local.*
