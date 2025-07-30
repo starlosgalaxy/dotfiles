@@ -30,3 +30,8 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	# echo 'Other OS'
 	;;
 esac
+
+## local aliases
+if [ -f ~/zsh/.config/aliases.local.zsh ]; then
+	source ~/zsh/.config/aliases.local.zsh
+fi

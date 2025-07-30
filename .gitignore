@@ -1,2 +1,2 @@
-# ignore files that are postpended with .local under any directory
-**/*.local
+# ignore files that have .local. in their name (e.g. something.local.js)
+**/*.local.*
