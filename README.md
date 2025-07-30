@@ -54,14 +54,17 @@ stow -D .    # Remove all symlinks
 ## TODO
 
 - [ ] Try Porting over to DXG Directory Stucture
-- [ ] Split Aliases out
-- [ ] SPlit Exports out
+- [x] Split Aliases out
+- [x] SPlit Exports out
 - [x] Migrate Away from OMZ
   - [x] Pick a plugin manager or home roll one
     - [x] Zinit
 - [ ] Add Brew Configurations
 - [x] More command Propmt Integrations
 - [ ] remove conflicting / dupliated auth token saving
+- [ ] move .zshrc configs into a mac-profile.sh
+  - [ ] leave .zshrc empty to easily see random installs on system
+- [ ] move font files into here ?
 
 ## License
 
