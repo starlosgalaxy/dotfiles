@@ -36,3 +36,6 @@ _darcs
 
 # other files
 mac.setup.sh
+
+# ignore .ssh directory and all its contents
+^/\.ssh(/|$)
