@@ -225,13 +225,14 @@
   "Use Selected Text Color (Dark)" : false,
   "Close Sessions On End" : true,
   "Selection Color (Dark)" : {
-    "Red Component" : 0.027450980392156862,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.25882352941176473,
-    "Green Component" : 0.21176470588235294
+    "Red Component" : 0.19919586181640625,
+    "Color Space" : "P3",
+    "Blue Component" : 0.4140583872795105,
+    "Alpha Component" : 1,
+    "Green Component" : 0.34182459115982056
   },
   "Default Bookmark" : "No",
-  "Minimum Contrast (Dark)" : 0.20000000000000004,
+  "Minimum Contrast (Dark)" : 0.19528273809523813,
   "Custom Command" : "No",
   "Foreground Color (Light)" : {
     "Red Component" : 0.396078431372549,
@@ -420,6 +421,7 @@
     "Blue Component" : 0.58823529411764708,
     "Green Component" : 0.58039215686274515
   },
+  "Faint Text Alpha (Dark)" : 0.49895833333333334,
   "Ansi 7 Color" : {
     "Red Component" : 0.7810397744178772,
     "Color Space" : "sRGB",
@@ -427,13 +429,13 @@
     "Alpha Component" : 1,
     "Green Component" : 0.78105825185775757
   },
-  "Non Ascii Font" : "Monaco 12",
   "Ansi 6 Color (Dark)" : {
     "Red Component" : 0.16470588235294117,
     "Color Space" : "sRGB",
     "Blue Component" : 0.59607843137254901,
     "Green Component" : 0.63137254901960782
   },
+  "Non Ascii Font" : "Monaco 12",
   "Cursor Guide Color" : {
     "Red Component" : 0.52338260412216187,
     "Color Space" : "sRGB",
