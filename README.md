@@ -61,6 +61,7 @@ stow -D .    # Remove all symlinks
 - [ ] move .zshrc configs into a mac-profile.sh
   - [ ] leave .zshrc empty to easily see random installs on system
 - [ ] move font files into here ?
+- [ ] revisit setup scrips for macOS
 
 ## Done
 
