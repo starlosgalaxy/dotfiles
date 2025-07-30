@@ -18,6 +18,9 @@
 [includeIf "gitdir:~/Development/Fastgrid/"] # include for all .git projects under ~/Development/Fastgrid/
     path = ~/.gitconfig.fastgrid
 
+# override for all .git projects under ~/Development/
+[includeIf "gitdir:~/"] # include for all .git projects under ~/Development/
+    path = ~/.gitconfig.local
 
 # [credential "https://dev.azure.com"]
 # useHttpPath = true
