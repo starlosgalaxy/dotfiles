@@ -19,7 +19,7 @@
     path = ~/.gitconfig.fastgrid
 
 # override for all .git projects under ~/Development/
-[includeIf "gitdir:~/"] # include for all .git projects under ~/Development/
+[includeIf "gitdir:~"] # include for all .git projects under ~
     path = ~/.gitconfig.local
 
 # [credential "https://dev.azure.com"]
