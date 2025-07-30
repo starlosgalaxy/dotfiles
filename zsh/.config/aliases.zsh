@@ -1,6 +1,6 @@
 # inside ~/zsh/.config/aliases.zsh
 #!/bin/sh
-alias ls='ls --color=auto'
+alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -16,11 +16,11 @@ case "$(uname -s)" in
 
 Darwin)
 	# echo 'Mac OS X'
-	alias ls='ls -G'
+	alias ls='ls -AG --color=auto'
 	;;
 
 Linux)
-	alias ls='ls --color=auto'
+	alias ls='ls -A --color=auto'
 	;;
 
 CYGWIN* | MINGW32* | MSYS* | MINGW*)
