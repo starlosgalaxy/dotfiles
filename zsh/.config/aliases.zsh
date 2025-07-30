@@ -31,7 +31,7 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	;;
 esac
 
-## local aliases
+# local aliases
 if [ -f ~/zsh/.config/aliases.local.zsh ]; then
 	source ~/zsh/.config/aliases.local.zsh
 fi
