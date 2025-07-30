@@ -44,7 +44,6 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-
 # consider using emacs keybindings
 
 # Exports
