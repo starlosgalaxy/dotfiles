@@ -35,7 +35,6 @@ zinit light Aloxaf/fzf-tab
 # Add in snippits
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::docker
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::command-not-found
 
@@ -77,3 +76,4 @@ source ~/zsh/.config/aliases.zsh
 
 # Shell integrations
 eval "$(fzf --zsh)"
+export PATH="$HOME/.local/bin:$PATH"

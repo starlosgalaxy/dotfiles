@@ -21,6 +21,13 @@ brew install stow
 # install fzf
 brew install fzf
 
+# install pipx
+brew install pipx
+pipx ensurepath
+
+# install spec-kitty cli
+pipx install spec-kitty-cli
+
 # install zinit
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
