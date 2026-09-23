@@ -15,8 +15,8 @@
 [includeIf "gitdir:~/Development/Slalom/"] # include for all .git projects under ~/Development/Slalom/
     path = ~/.gitconfig.slalom
 
-[includeIf "gitdir:~/Development/Fastgrid/"] # include for all .git projects under ~/Development/Fastgrid/
-    path = ~/.gitconfig.fastgrid
+[includeIf "gitdir:~/Development/vision/"] # include for all .git projects under ~/Development/Fastgrid/
+    path = ~/.gitconfig.vision
 
 # override for all .git projects under ~/Development/
 [include] # include for all .git projects under ~

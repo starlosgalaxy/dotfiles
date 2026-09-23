@@ -1,0 +1,11 @@
+#inside ~/.gitconfig.vision
+
+[user]
+    email = carlos.salazar@googlecloud.corp-partner.google.com
+    name = Carlos Salazar
+
+[gitlab]
+    user = "carlos.salazar5" #should be inside double quote.
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/vision" #should be inside double quote.
