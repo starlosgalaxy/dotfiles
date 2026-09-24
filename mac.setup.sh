@@ -38,3 +38,9 @@ mkdir -p ~/Library/Fonts/Operator-Mono-Nerd-Font && find ./fonts/Operator-Mono-N
 
 # some useful mac tools
 brew install --cask notunes # stops apple music from launching when play is pressed
+
+# Vertex ai bits
+brew install --cask gcloud-cli
+
+# Claude Code (native) install
+curl -fsSL https://claude.ai/install.sh | bash
