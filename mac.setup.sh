@@ -20,6 +20,7 @@ brew install stow
 
 # install fzf
 brew install fzf
+brew install zoxide
 
 # install pipx
 brew install pipx
@@ -38,6 +39,9 @@ mkdir -p ~/Library/Fonts/Operator-Mono-Nerd-Font && find ./fonts/Operator-Mono-N
 
 # some useful mac tools
 brew install --cask notunes # stops apple music from launching when play is pressed
+brew install --cask obsidian
+brew install --cask iterm2
+brew install --cask alt-tab
 
 # Vertex ai bits
 brew install --cask gcloud-cli
