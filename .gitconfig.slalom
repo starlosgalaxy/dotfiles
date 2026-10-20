@@ -7,4 +7,4 @@
     user = "Carlos.Salazar@slalom.com" #should be inside double quote.
 
 [core]
-    sshCommand = "ssh -i ~/.ssh/carlos.salazar@slalom" #should be inside double quote.
+    sshCommand = "ssh -i ~/.ssh/carlos.salazar@slalom -o IdentitiesOnly=yes" #should be inside double quote.

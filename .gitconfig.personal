@@ -8,4 +8,4 @@
     user = "starlosgalaxy" #should be inisde double quote.
 
 [core]
-    sshCommand = "ssh -i ~/.ssh/starlosgalaxy" #should be inisde double quote.
+    sshCommand = "ssh -i ~/.ssh/starlosgalaxy -o IdentitiesOnly=yes" #should be inisde double quote.

@@ -9,6 +9,7 @@ fi
 if [ -f /opt/homebrew/bin/brew ]; then
     # this is for loading brew in macos
     eval "$(/opt/homebrew/bin/brew shellenv)"
+  fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 fi
 
 # Zinit Data Directory Setup to store zinit and plugins
@@ -74,6 +75,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -AG --color $realpath'
 # Aliases
 source ~/zsh/.config/aliases.zsh
 
+# Scripts
+
+source ~/zsh/.config/scripts.zsh
+
 # Shell integrations
 eval "$(fzf --zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(zoxide init zsh)"

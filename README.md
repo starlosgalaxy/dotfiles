@@ -8,8 +8,10 @@ GNU Stow is a symlink farm manager that helps you maintain dotfiles by creating 
 
 ## Prerequisites
 
-- GNU Stow (`brew install stow` on macOS or `apt-get install stow` on Ubuntu/Debian)
-- Zap package manager for zsh plugins
+- Homebrew on macOS
+- GNU Stow
+- Zsh with Zinit for plugins (Zinit bootstraps automatically from `.zshrc`)
+- Shell tools such as fzf and zoxide; installation commands are in [mac.setup.sh](mac.setup.sh)
 
 ## Structure (main OS is currently Darwin/MacOS)
 
@@ -23,17 +25,48 @@ dotfiles/
 
 ## Installation
 
-1. Clone this repository:
+1. Install Homebrew if it is not already installed:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/.dotfiles
-   cd ~/.dotfiles
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-2. Stow all configurations:
+  Follow the installer's instructions to add Homebrew to your shell environment before continuing.
+
+2. Install GNU Stow:
+
+  ```bash
+  brew install stow
+  ```
+
+3. Clone this repository into `~/dotfiles`:
+
+  ```bash
+  git clone https://github.com/starlosgalaxy/dotfiles.git ~/dotfiles
+  cd ~/dotfiles
+  ```
+
+4. Dry-run Stow to check for conflicts without changing any files:
+
+  ```bash
+  stow --simulate --verbose --target="$HOME" .
+  ```
+
+5. Back up your existing `~/.gitconfig` if present:
+
+  ```bash
+  if [ -e "$HOME/.gitconfig" ] || [ -L "$HOME/.gitconfig" ]; then
+     mv "$HOME/.gitconfig" "$HOME/.gitconfig.backup.$(date +%Y%m%d-%H%M%S)"
+  fi
+  ```
+
+  Back up and move aside any other conflicting files reported by Stow, such as `~/.zshrc`. Do not discard existing settings you want to keep.
+
+6. Repeat the dry run. Once no conflicts remain, create the symlinks:
 
    ```bash
-   stow .    # This will stow everything from the current directory
+  stow --simulate --verbose --target="$HOME" .
+  stow --verbose --target="$HOME" .
    ```
 
 ## Removing Symlinks
@@ -41,7 +74,8 @@ dotfiles/
 To remove all symlinks:
 
 ```bash
-stow -D .    # Remove all symlinks
+cd ~/dotfiles
+stow --delete --target="$HOME" .
 ```
 
 ## Best Practices
@@ -54,23 +88,24 @@ stow -D .    # Remove all symlinks
 
 ## TODO
 
-- [ ] Try Porting over to DXG Directory Stucture
-- [ ] Add Brew Configurations
-  - [ ] need to split them between systems as well
-- [ ] remove conflicting / dupliated auth token saving
+- [ ] Try porting over to the XDG directory structure
+- [ ] Split Homebrew setup commands between systems
+- [ ] Remove conflicting / duplicated auth token saving
 - [ ] move .zshrc configs into a mac-profile.sh
   - [ ] leave .zshrc empty to easily see random installs on system
-- [ ] move font files into here ?
-- [ ] revisit setup scrips for macOS
+- [ ] Revisit setup scripts for macOS
 
 ## Done
 
+- [x] Document Homebrew, Stow, conflict checks, and dotfiles installation
+- [x] Add macOS Homebrew setup commands
+- [x] Include font files in the repository
 - [x] Zinit
 - [x] Split Aliases out
 - [x] SPlit Exports out
 - [x] Migrate Away from OMZ
 - [x] More command Prompt Integrations
-  - [x] Fzf, Fzf-tab
+  - [x] Fzf, Fzf-tab, zoxide
   - [x] Pick a plugin manager or home roll one
 - [x] gitignore'ed local file integration
 
