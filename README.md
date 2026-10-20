@@ -107,6 +107,7 @@ stow --delete --target="$HOME" .
 - [x] More command Prompt Integrations
   - [x] Fzf, Fzf-tab, zoxide
   - [x] Pick a plugin manager or home roll one
+- [x] Claude Code / Copilot CLI follow the light / dark iTerm profile
 - [x] gitignore'ed local file integration
 
 ## License

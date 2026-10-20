@@ -48,3 +48,8 @@ brew install --cask gcloud-cli
 
 # Claude Code (native) install
 curl -fsSL https://claude.ai/install.sh | bash
+
+# have Claude Code follow the terminal background (/iterm-light, /iterm-dark)
+# copilot's default "github" theme already does this, so it needs no config
+mkdir -p ~/.claude && [ -f ~/.claude/settings.json ] || echo '{}' > ~/.claude/settings.json
+jq '.theme = "auto"' ~/.claude/settings.json > ~/.claude/settings.json.tmp && mv ~/.claude/settings.json.tmp ~/.claude/settings.json
