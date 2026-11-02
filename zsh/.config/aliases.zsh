@@ -6,9 +6,9 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # confirm before overwriting
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+# alias rm='rm -i'
 alias g-clear-local='git branch | grep -v -E "dev|main|master" | xargs git branch -D'
 
 # switch every open iTerm session's profile (iterm-profile is in scripts.zsh)
